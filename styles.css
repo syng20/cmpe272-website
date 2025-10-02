@@ -1,0 +1,87 @@
+/* Root */
+:root {
+    /* colors */
+    /* --bg_color: #efe1e9;
+    --container_color: #f3fffa;
+    --shadow_color: #ebc3db; 
+    --outline_color: #e29ac4;
+    --hover_color: #ab3a7c; 
+    --title_text_color: #2d0f21; 
+    --body_text_color: #826f7a;  */
+    
+    /* spacing */
+    --spacing: 1rem;
+
+    --outline_size: 5px; 
+    --box_shadow_size: -10px 10px; 
+
+    --borders: {color:outline_color};
+}
+
+
+/* Text styling */
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1em;
+    color: var(--body_text_color); 
+    
+    text-wrap-mode: wrap;
+}
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 4em;
+    color: var(--title_text_color); 
+}
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 2em; 
+    color: var(--title_text_color); 
+}
+
+
+/* Theme */
+body { 
+    overflow: hidden; 
+    /* background-color: var(--bg_color); */
+}
+.newline {
+    white-space: pre-line; 
+}
+.newline-inc-tab {
+    white-space: pre-wrap; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+
+/* footer */
+#atbottom {
+    width: 100vw;
+    height: 25px;
+    display: flex; 
+    position: absolute; 
+    bottom: 0px; 
+    justify-content: center;
+    /* text-shadow: var(--hover_color) 1px 0 10px;  */
+
+    cursor: default; 
+}
+
+
