@@ -10,14 +10,24 @@
 <body>
     <header> 
         <h1>Sinclair Apiary </h1>
+        
+        <nav>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
     </header>
     
-
+    
+    
     <h2>About Us</h2>
     <p>Based in the outskirts of Shellicity, Sinclair Apiary has served as family-run business and tourist attraction for three generations. We pride ourselves on our ethical treatment of our bees and crops. </p>
 
     <h2>Products</h2>
-    <p>We sell honey. </p>
+    <p>We are in the process of redoing our inventory. More information to come soon! </p>
 
     <h2>News</h2>
     <p>Sinclair Apiary recently celebrated our 80th anniversary! </p>
