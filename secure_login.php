@@ -13,7 +13,8 @@
         if (isset($_SERVER["REQUEST_METHOD"])){
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ( ($usrn != "admin") || ($pwd != "4dmin_password") ) {
-                    print("<p>Incorrect login.<\p>"); 
+                    print("<p>Incorrect login.</p>"); 
+                    print("<p>/n username: $usrn , password: $pwd </p>"); 
                 }
                 else $access_granted = 1; 
             }
