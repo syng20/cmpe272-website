@@ -12,9 +12,9 @@
         $access_granted = 0; 
         if (isset($_SERVER["REQUEST_METHOD"])){
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if ( ($usrn != "admin") || ($pwd != "4dmin_password") ) {
+                if ( ($_POST[usrn] != "admin") || ($_POST[pwd] != "4dmin_password") ) {
                     print("<p>Incorrect login.</p>"); 
-                    print("<p>/n username: $usrn , password: $pwd </p>"); 
+                    print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
                 }
                 else $access_granted = 1; 
             }
