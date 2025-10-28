@@ -16,16 +16,16 @@
     <!-- box selection -->
     <main id="buttoncontainer">
         <div class="buttonholder">
-          <button class="button"><h2><a href="about.php">About Us</a></h2></button>
+          <a href="about.php"><button class="button"><h2>About Us</h2></button></a>
         </div>
         <div class="buttonholder">
-          <button class="button"><h2><a href="products.php">Products</a></h2></button>
+          <a href="products.php"><button class="button"><h2>Products</h2></button></a>
         </div>
         <div class="buttonholder">
-          <button class="button"><h2><a href="news.php">News</a></h2></button>
+          <a href="news.php"><button class="button"><h2>News</h2></button></a>
         </div>
         <div class="buttonholder">
-          <button class="button"><h2><a href="contact.php">Contact Us</a></h2></button>
+          <a href="contact.php"><button class="button"><h2>Contact Us</h2></button></a>
         </div>
     </main>
 

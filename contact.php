@@ -45,7 +45,7 @@
     
 
     <footer id="atbottom">
-        Staff Log In
+        <a href="secure_login.php">Staff Log-In</a>
     </footer>
 
 </body>

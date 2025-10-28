@@ -150,7 +150,7 @@ ul li a:hover {
 /* footer */
 #atbottom { 
     width: 100vw;
-    height: 25px;
+    height: 45px;
     display: flex; 
     position: absolute; 
     bottom: 0px; 
