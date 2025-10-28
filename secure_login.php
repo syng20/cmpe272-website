@@ -23,7 +23,7 @@
 
     <h2>Staff only.</h2>
     <p>Please input your username and password.</p>
-    <form action="secure_section.php" method="POST">
+    <form action="" method="POST">
         Username: <input type="text" name="usrn"><br>
         Password: <input type="text" name="pwd"><br>
         <input type="submit">
