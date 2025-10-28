@@ -10,13 +10,19 @@
 
     <?php
         $access_granted = 0; 
+        $usrn = $pwd = "";
+
         if (isset($_SERVER["REQUEST_METHOD"])){
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if ( ($_POST[usrn] != "admin") || ($_POST[pwd] != "4dmin_password") ) {
-                    print("<p>Incorrect login.</p>"); 
-                    print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
+                if (empty($_POST["usrn"])) print ("<p>no username</p>"); 
+                if (empty($_POST["pwd"])) print ("<p>no password</p>"); 
+                if ( !(empty($_POST["usrn"])) && !(empty($_POST["pwd"])) ) {
+                    if ( ($_POST["usrn"] != "admin") || ($_POST["pwd"] != "4dmin_password") ) {
+                        print("<p>Incorrect login.</p>"); 
+                        print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
+                    }
+                    else $access_granted = 1; 
                 }
-                else $access_granted = 1; 
             }
         }
     ?>
