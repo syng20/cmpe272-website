@@ -24,64 +24,64 @@
 
     <h2>Products</h2>
     <main class="buttoncontainer">
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="wildflower_honey.png"></button>
-                <button class="button"><p>Wildflower Honey</p></button>
+                <button class="imagebutton_i"><img src="img/wildflower_honey.png"></button>
+                <button class="imagebutton_b"><h3>Wildflower Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="apple_blossom_honey.jpg"></button>
-                <button class="button"><p>Apple Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/apple_blossom_honey.jpg"></button>
+                <button class="imagebutton_b"><h3>Apple Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="orange_blossom_honey.png"></button>
-                <button class="button"><p>Orange Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/orange_blossom_honey.png"></button>
+                <button class="imagebutton_b"><h3>Orange Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="cherry_blossom_honey.jpg"></button>
-                <button class="button"><p>Cherry Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/cherry_blossom_honey.jpg"></button>
+                <button class="imagebutton_b"><h3>Cherry Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="pear_blossom_honey.jpg"></button>
-                <button class="button"><p>Pear Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/pear_blossom_honey.jpg"></button>
+                <button class="imagebutton_b"><h3>Pear Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="peach_blossom_honey.jpg"></button>
-                <button class="button"><p>Peach Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/peach_blossom_honey.jpg"></button>
+                <button class="imagebutton_b"><h3>Peach Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="manga_blossom_honey.jpg"></button>
-                <button class="button"><p>Mango Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/mango_blossom_honey.jpg"></button>
+                <button class="imagebutton_b"><h3>Mango Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="lychee_blossom_honey.png"></button>
-                <button class="button"><p>Lychee Blossom Honey</p></button>
+                <button class="imagebutton_i"><img src="img/lychee_blossom_honey.png"></button>
+                <button class="imagebutton_b"><h3>Lychee Blossom Honey</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="honeycomb.jpg"></button>
-                <button class="button"><p>Honeycomb</p></button>
+                <button class="imagebutton_i"><img src="img/honeycomb.jpg"></button>
+                <button class="imagebutton_b"><h3>Honeycomb</h3></button>
             </a>
         </div>
-        <div class ="buttonholder">
+        <div class ="imagebuttonholder">
             <a href="about.php">
-                <button class="imagebutton_i"><img src="beeswax_candles.jpg"></button>
-                <button class="button"><p>Beeswax Candles</p></button>
+                <button class="imagebutton_i"><img src="img/beeswax_candles.jpg"></button>
+                <button class="imagebutton_b"><h3>Beeswax Candles</h3></button>
             </a>
         </div>
   </main>
