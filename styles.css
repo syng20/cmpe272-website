@@ -147,6 +147,16 @@ ul li a:hover {
 }
 
 
+/* text section */
+.textsection{
+    display: flex; 
+    flex-wrap: wrap;
+
+    overflow-y: scroll;
+    
+}
+
+
 /* footer */
 #atbottom { 
     width: 100vw;

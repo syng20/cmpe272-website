@@ -35,13 +35,18 @@
         <input type="submit">
     </form>
 
+    <div class="textsection">
     <?php
         if ($access_granted) {
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("admin_users.txt"));
+            while ($line = fgets($myfile)) {
+                print $line; 
+            }
+            // echo fread($myfile,filesize("admin_users.txt"));
             fclose($myfile);
         }
     ?>
+    </div>
 
 
 </body>
