@@ -23,7 +23,68 @@
     </header>
 
     <h2>Products</h2>
-    <p>We are in the process of redoing our inventory. More information to come soon! </p>
+    <main class="buttoncontainer">
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="wildflower_honey.png"></button>
+                <button class="button"><p>Wildflower Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="apple_blossom_honey.jpg"></button>
+                <button class="button"><p>Apple Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="orange_blossom_honey.png"></button>
+                <button class="button"><p>Orange Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="cherry_blossom_honey.jpg"></button>
+                <button class="button"><p>Cherry Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="pear_blossom_honey.jpg"></button>
+                <button class="button"><p>Pear Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="peach_blossom_honey.jpg"></button>
+                <button class="button"><p>Peach Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="manga_blossom_honey.jpg"></button>
+                <button class="button"><p>Mango Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="lychee_blossom_honey.png"></button>
+                <button class="button"><p>Lychee Blossom Honey</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="honeycomb.jpg"></button>
+                <button class="button"><p>Honeycomb</p></button>
+            </a>
+        </div>
+        <div class ="buttonholder">
+            <a href="about.php">
+                <button class="imagebutton_i"><img src="beeswax_candles.jpg"></button>
+                <button class="button"><p>Beeswax Candles</p></button>
+            </a>
+        </div>
+  </main>
 
 </body>
 </html>
