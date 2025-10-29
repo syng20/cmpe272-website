@@ -14,15 +14,14 @@
 
         if (isset($_SERVER["REQUEST_METHOD"])){
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if (empty($_POST["usrn"])) print ("<p>no username</p>"); 
-                if (empty($_POST["pwd"])) print ("<p>no password</p>"); 
                 if ( !(empty($_POST["usrn"])) && !(empty($_POST["pwd"])) ) {
                     if ( ($_POST["usrn"] != "admin") || ($_POST["pwd"] != "4dmin_password") ) {
                         print("<p>Incorrect login.</p>"); 
                         print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
                     }
                     else $access_granted = 1; 
-                }
+                } 
+                else print ("<p>Please make sure all fields are filled.</p>"); 
             }
         }
     ?>
@@ -32,14 +31,17 @@
     <p>Please input your username and password.</p>
     <form action="" method="POST">
         Username: <input type="text" name="usrn"><br>
-        Password: <input type="text" name="pwd"><br>
+        Password: <input type="password" name="pwd"><br>
         <input type="submit">
     </form>
 
     <?php
         if ($access_granted) {
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("cs_associate.txt"));
+            // echo fread($myfile,filesize("admin_users.txt"));
+            foreach($myfile in $line) {
+                echo $line; 
+            }
             fclose($myfile);
         }
     ?>
