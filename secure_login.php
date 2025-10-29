@@ -31,17 +31,14 @@
     <p>Please input your username and password.</p>
     <form action="" method="POST">
         Username: <input type="text" name="usrn"><br>
-        Password: <input type="password" name="pwd"><br>
+        Password: <input type="text" name="pwd"><br>
         <input type="submit">
     </form>
 
     <?php
         if ($access_granted) {
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            // echo fread($myfile,filesize("admin_users.txt"));
-            foreach($myfile in $line) {
-                echo $line; 
-            }
+            echo fread($myfile,filesize("admin_users.txt"));
             fclose($myfile);
         }
     ?>
