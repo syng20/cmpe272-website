@@ -31,7 +31,7 @@
             </a>
         </div>
         <div class ="imagebuttonholder">
-            <a href="about.php">
+            <a href="products/apple_blossom_honey.php">
                 <button class="imagebutton_i"><img src="img/apple_blossom_honey.jpg"></button>
                 <button class="imagebutton_b"><h3>Apple Blossom Honey</h3></button>
             </a>
