@@ -10,12 +10,18 @@
 
     <?php
         $access_granted = 0; 
+        $usrn = $pwd = "";
+
         if (isset($_SERVER["REQUEST_METHOD"])){
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if ( ($usrn != "admin") || ($pwd != "4dmin_password") ) {
-                    print("<p>Incorrect login.<\p>"); 
-                }
-                else $access_granted = 1; 
+                if ( !(empty($_POST["usrn"])) && !(empty($_POST["pwd"])) ) {
+                    if ( ($_POST["usrn"] != "admin") || ($_POST["pwd"] != "4dmin_password") ) {
+                        print("<p>Incorrect login.</p>"); 
+                        print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
+                    }
+                    else $access_granted = 1; 
+                } 
+                else print ("<p>Please make sure all fields are filled.</p>"); 
             }
         }
     ?>
@@ -23,16 +29,19 @@
 
     <h2>Staff only.</h2>
     <p>Please input your username and password.</p>
-    <form action="secure_section.php" method="POST">
+    <form action="" method="POST">
         Username: <input type="text" name="usrn"><br>
-        Password: <input type="text" name="pwd"><br>
+        Password: <input type="password" name="pwd"><br>
         <input type="submit">
     </form>
 
     <?php
         if ($access_granted) {
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("cs_associate.txt"));
+            // echo fread($myfile,filesize("admin_users.txt"));
+            foreach($myfile in $line) {
+                echo $line; 
+            }
             fclose($myfile);
         }
     ?>
