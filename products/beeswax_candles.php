@@ -22,18 +22,18 @@
         </nav>
     </header>
 
-    <h2>Apple Blossom Honey</h2>
+    <h2>Beeswax Candles</h2>
 
     <main class="productsection">
         <div class="productsection_i">
-            <img src="../img/apple_blossom_honey.jpg">
+            <img src="../img/beeswax_candles.jpg">
         </div>
         <div class="productsection_t"> 
             <p><strong>Contents:</strong>
-            A jar of apple blossom honey. Each jar is 12 oz.
+            A set of three candles made from beeswax.
             <br>
             <strong>Price:</strong>
-            $15.00 per jar</p>
+            $11.00 per pack of three candles</p>
         </div>
     </main>
     

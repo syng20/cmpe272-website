@@ -22,15 +22,15 @@
         </nav>
     </header>
 
-    <h2>Apple Blossom Honey</h2>
+    <h2>Wildflower Blossom Honey</h2>
 
     <main class="productsection">
         <div class="productsection_i">
-            <img src="../img/apple_blossom_honey.jpg">
+            <img src="../img/wildflower_honey.png">
         </div>
         <div class="productsection_t"> 
             <p><strong>Contents:</strong>
-            A jar of apple blossom honey. Each jar is 12 oz.
+            A jar of wildflower blossom honey. Each jar is 12 oz.
             <br>
             <strong>Price:</strong>
             $15.00 per jar</p>

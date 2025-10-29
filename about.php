@@ -9,7 +9,7 @@
 </head>
 <body>
     <header> 
-        <h1>Sinclair Apiary </h1>
+        <h1>New Leaf Apiary </h1>
         
         <nav>
         <ul>
@@ -23,7 +23,7 @@
     </header>
 
     <h2>About Us</h2>
-    <p>Based in the outskirts of Shellicity, Sinclair Apiary has served as family-run business and tourist attraction for three generations. We pride ourselves on our ethical treatment of our bees and crops. </p>
+    <p>Based in the outskirts of Shellicity, New Leaf Apiary has served as family-run business and tourist attraction for three generations. We pride ourselves on our ethical treatment of our bees and crops. </p>
 
 </body>
 </html>

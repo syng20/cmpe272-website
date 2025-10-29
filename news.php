@@ -9,7 +9,7 @@
 </head>
 <body>
     <header> 
-        <h1>Sinclair Apiary </h1>
+        <h1>New Leaf Apiary </h1>
         
         <nav>
         <ul>
