@@ -8,26 +8,26 @@
 </head>
 <body>
     <header> 
-        <h1>Sinclair Apiary </h1>
+        <h1>New Leaf Apiary </h1>
         
         
     </header>
     
     <!-- box selection -->
-    <main id="buttoncontainer">
-        <div class="buttonholder">
-          <a href="about.php"><button class="button"><h2>About Us</h2></button></a>
-        </div>
-        <div class="buttonholder">
-          <a href="products.php"><button class="button"><h2>Products</h2></button></a>
-        </div>
-        <div class="buttonholder">
-          <a href="news.php"><button class="button"><h2>News</h2></button></a>
-        </div>
-        <div class="buttonholder">
-          <a href="contact.php"><button class="button"><h2>Contact Us</h2></button></a>
-        </div>
-    </main>
+    <main class="buttoncontainer">
+      <div class="buttonholder">
+        <a href="about.php"><button class="button"><h2>About Us</h2></button></a>
+      </div>
+      <div class="buttonholder">
+        <a href="products.php"><button class="button"><h2>Products</h2></button></a>
+      </div>
+      <div class="buttonholder">
+        <a href="news.php"><button class="button"><h2>News</h2></button></a>
+      </div>
+      <div class="buttonholder">
+        <a href="contact.php"><button class="button"><h2>Contact Us</h2></button></a>
+      </div>
+  </main>
 
 </body>
 </html>
