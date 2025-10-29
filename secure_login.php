@@ -38,10 +38,7 @@
     <?php
         if ($access_granted) {
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            // echo fread($myfile,filesize("admin_users.txt"));
-            foreach($myfile in $line) {
-                echo $line; 
-            }
+            echo fread($myfile,filesize("admin_users.txt"));
             fclose($myfile);
         }
     ?>
