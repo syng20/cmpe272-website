@@ -40,9 +40,11 @@
         if ($access_granted) {
             print "<h2>Users:</h2>\n";
             $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
+            print "<p>"; 
             while ($line = fgets($myfile)) {
-                print "<p>$line\n<\p>";
+                print "* $line\n";
             }
+            print "</p>"; 
             // echo fread($myfile,filesize("admin_users.txt"));
             fclose($myfile);
         }
