@@ -13,7 +13,7 @@
     $largest_v = 0; 
     foreach ($retrieved as $name => $value) {
         if ($value > 0) {
-            $value++; 
+            $retrieved[$name]++; 
             $nz_counter++; 
             if ($value > $largest_v) {
                 $largest_n = $name; 
