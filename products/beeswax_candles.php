@@ -3,7 +3,7 @@
     $v = stripslashes($_COOKIE['visits_array']); 
     $retrieved = json_decode($v, true); 
     $retrieved['bc']++; 
-    setcookie('visits_array', json_encode($retrieved)); 
+    setcookie('visits_array', json_encode($retrieved), , '/'); 
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
@@ -24,7 +24,7 @@
     if ($nz_counter > 5) {
         $recent[$largest_n] = 0; 
     }
-    setcookie('recently_array', json_encode($retrieved)); 
+    setcookie('recently_array', json_encode($retrieved), , '/'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
