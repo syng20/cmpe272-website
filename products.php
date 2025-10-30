@@ -87,6 +87,7 @@
             </div>
         </div>
         <div id="recent_sidebar">
+            hi.
             <?php
                 // $recents = array(); 
                 // foreach ($_COOKIE['recent'] as $name => $value) {
