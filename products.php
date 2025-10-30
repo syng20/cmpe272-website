@@ -99,7 +99,7 @@
                 // foreach ($recents as $name_j => $value_j) {
                 //     print "<p>$name_j\n</p>"; 
                 // }
-                print "$_COOKIE["first_visit"]\n"; 
+                print "<p>$_COOKIE["first_visit"]\n"; 
                 print "Recently Visited: \n"; 
                 $v = stripslashes($_COOKIE['visits_array']); 
                 $retrieved = json_decode($v, true); 
@@ -112,6 +112,7 @@
                 foreach ($_COOKIE["v"] as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
+                print "</p>";
             ?>
         </div>
   </main>
