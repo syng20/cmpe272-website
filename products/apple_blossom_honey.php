@@ -1,3 +1,28 @@
+<?php
+    // for most visited 
+    $abh = $_COOKIE["visits[abh]"]; 
+    $abh++; 
+    setcookie("visits[abh]", $abh); 
+    // for most recently visited
+    $abh = $_COOKIE["recent[abh]"]; 
+    $abh++; 
+    setcookie("recent[abh]", $abh); 
+    $nz_counter = 0; 
+    $largest_n = ""; 
+    $largest_v = 0; 
+    foreach ($_COOKIE['recent'] as $name => $value) {
+        if ($value > 0) {
+            $value++; 
+            $nz_counter++; 
+            if ($value > $largest_v) {
+                $largest_n = $name; 
+            }
+        }
+    }
+    if ($nz_counter > 5) {
+        setcookie("recent[$largest]", 0); 
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
