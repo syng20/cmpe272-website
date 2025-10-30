@@ -167,7 +167,7 @@ ul li a:hover {
     overflow-y: scroll;
     
 }
-.recent_sidebar {
+#recent_sidebar {
     width: 10%;
     display: flex; 
     flex-wrap: wrap;
