@@ -99,22 +99,21 @@
                 // foreach ($recents as $name_j => $value_j) {
                 //     print "<p>$name_j\n</p>"; 
                 // }
-                print "<p>$_COOKIE["first_visit"]\n"; 
-                print "Recently Visited: \n"; 
+                print "<p>$_COOKIE['first_visit']\n</p>"; 
+                print "<p>Recently Visited: \n</p>"; 
                 // $v = stripslashes($_COOKIE['visits_array']); 
                 // $retrieved = json_decode($v, true); 
                 $retrieved = json_decode($_COOKIE['visits_array'], true); 
                 foreach ($retrieved as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
-                print "Most Visited: \n"; 
+                print "<p>Most Visited: \n</p>"; 
                 // $v = stripslashes($_COOKIE['recently_array']); 
                 // $retrieved = json_decode($v, true); 
                 $retrieved = json_decode($_COOKIE['recently_array'], true); 
-                foreach ($_COOKIE["v"] as $name => $value) {
+                foreach ($retrieved as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
-                print "</p>";
             ?>
         </div>
   </main>
