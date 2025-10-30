@@ -2,12 +2,12 @@
     // for most visited 
     $v = stripslashes($_COOKIE['visits_array']); 
     $retrieved = json_decode($v, true); 
-    $retrieved['abh']++; 
+    $retrieved['hc']++; 
     setcookie('visits_array', json_encode($retrieved), 0, '/'); 
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
-    $retrieved['abh']++; 
+    $retrieved['hc']++; 
     $nz_counter = 0; 
     $largest_n = ""; 
     $largest_v = 0; 
