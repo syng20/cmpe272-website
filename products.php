@@ -88,15 +88,23 @@
         </div>
         <div id="recent_sidebar">
             <?php
-                $recents = array(); 
-                foreach ($_COOKIE['recent'] as $name => $value) {
-                    if ($value > 0) {
-                        $recents["$name"] = $value; 
-                    }
+                // $recents = array(); 
+                // foreach ($_COOKIE['recent'] as $name => $value) {
+                //     if ($value > 0) {
+                //         $recents["$name"] = $value; 
+                //     }
+                // }
+                // asort($recents); 
+                // foreach ($recents as $name_j => $value_j) {
+                //     print "<p>$name_j\n</p>"; 
+                // }
+                print "Recently Visited: \n"; 
+                foreach ($_COOKIE["visits"] as $name => $value) {
+                    print "<p>$name is $value\n</p>"; 
                 }
-                asort($recents); 
-                foreach ($recents as $name_j => $value_j) {
-                    print "<p>$name_j\n</p>"; 
+                print "Most Visited: \n"; 
+                foreach ($_COOKIE["visits"] as $name => $value) {
+                    print "<p>$name is $value\n</p>"; 
                 }
             ?>
         </div>
