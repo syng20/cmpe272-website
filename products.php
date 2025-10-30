@@ -87,7 +87,7 @@
             </div>
         </div>
         <div id="recent_sidebar">
-            hi.
+            <p>hi.\n</p>
             <?php
                 // $recents = array(); 
                 // foreach ($_COOKIE['recent'] as $name => $value) {
@@ -99,12 +99,17 @@
                 // foreach ($recents as $name_j => $value_j) {
                 //     print "<p>$name_j\n</p>"; 
                 // }
+                print "$_COOKIE["first_visit"]\n"; 
                 print "Recently Visited: \n"; 
-                foreach ($_COOKIE["visits"] as $name => $value) {
+                $v = stripslashes($_COOKIE['visits_array']); 
+                $retrieved = json_decode($v, true); 
+                foreach ($retrieved as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
                 print "Most Visited: \n"; 
-                foreach ($_COOKIE["visits"] as $name => $value) {
+                $v = stripslashes($_COOKIE['recently_array']); 
+                $retrieved = json_decode($v, true); 
+                foreach ($_COOKIE["v"] as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
             ?>

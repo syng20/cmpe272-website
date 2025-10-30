@@ -1,27 +1,30 @@
 <?php
     // for most visited 
-    $bc = $_COOKIE["visits[bc]"]; 
-    $bc++; 
-    setcookie("visits[bc]", $bc); 
+    $v = stripslashes($_COOKIE['visits_array']); 
+    $retrieved = json_decode($v, true); 
+    $retrieved['bc']++; 
+    setcookie('visitsArray', json_encode($retrieved)); 
     // for most recently visited
-    $bc = $_COOKIE["recent[bc]"]; 
-    $bc++; 
-    setcookie("recent[bc]", $bc); 
+    $v = stripslashes($_COOKIE['recently_array']); 
+    $retrieved = json_decode($v, true); 
+    $retrieved['bc']++; 
     $nz_counter = 0; 
     $largest_n = ""; 
     $largest_v = 0; 
-    foreach ($_COOKIE['recent'] as $name => $value) {
+    foreach ($retrieved as $name => $value) {
         if ($value > 0) {
             $value++; 
             $nz_counter++; 
             if ($value > $largest_v) {
                 $largest_n = $name; 
+                $largest_v = $value; 
             }
         }
     }
     if ($nz_counter > 5) {
-        setcookie("recent[$largest]", 0); 
+        $recent[$largest_n] = 0; 
     }
+    setcookie('recently_array', json_encode($retrieved)); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

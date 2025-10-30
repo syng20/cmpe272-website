@@ -3,29 +3,15 @@ if (!isset($_COOKIE["first_visit"])) {
   setcookie("first_visit", 1); 
   // most visited 
   // increase, sort by value 
-  setcookie("visits[abh]", 0); 
-  setcookie("visits[bc]", 0); 
-  setcookie("visits[cbh]", 0); 
-  setcookie("visits[hc]", 0); 
-  setcookie("visits[lbh]", 0); 
-  setcookie("visits[mbh]", 0); 
-  setcookie("visits[obh]", 0); 
-  setcookie("visits[phbh]", 0); 
-  setcookie("visits[prbh]", 0); 
-  setcookie("visits[wh]", 0); 
+  $visits = ['abh' => 0, 'bc' => 0, 'cbh' => 0, 'hc' => 0, 'lbh' => 0, 'mbh' => 0, 'obh' => 0, 'phbh' => 0, 'prbh' => 0, 'wh' => 0]; 
+  $visitsJson = json_encode($visits); 
+  setcookie('visitsArray', $visitsJson); 
   // most recently visited 
   // set current page to 1, increase all non-zero values 
   // if number of non-zero values > 5, set largest value to 0
-  setcookie("recent[abh]", 0); 
-  setcookie("recent[bc]", 0); 
-  setcookie("recent[cbh]", 0); 
-  setcookie("recent[hc]", 0); 
-  setcookie("recent[lbh]", 0); 
-  setcookie("recent[mbh]", 0); 
-  setcookie("recent[obh]", 0); 
-  setcookie("recent[phbh]", 0); 
-  setcookie("recent[prbh]", 0); 
-  setcookie("recent[wh]", 0); 
+  $recently = ['abh' => 0, 'bc' => 0, 'cbh' => 0, 'hc' => 0, 'lbh' => 0, 'mbh' => 0, 'obh' => 0, 'phbh' => 0, 'prbh' => 0, 'wh' => 0]; 
+  $recentlyJson = json_encode($recently); 
+  setcookie('recentlyArray', $recentlyJson); 
 }
 ?>
 <!DOCTYPE html>
