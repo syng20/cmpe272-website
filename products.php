@@ -100,21 +100,28 @@
                 // foreach ($recents as $name_j => $value_j) {
                 //     print "<p>$name_j\n</p>"; 
                 // }
-                echo $_COOKIE['first_visit']; 
-                echo "<p>Most Visited: \n</p>"; 
+                echo "<h3>Most Visited: \n</h3>"; 
                 // $v = stripslashes($_COOKIE['visits_array']); 
                 // $retrieved = json_decode($v, true); 
+                $recents = array(); 
                 $retrieved = json_decode($_COOKIE['visits_array'], true); 
                 foreach ($retrieved as $name => $value) {
-                    echo "<p>$name is $value\n</p>"; 
+                    if ($value > 0) {
+                        array_push($recents, $name); 
+                    }
                 }
-                echo "<p>Recently Visited: \n</p>"; 
-                // $v = stripslashes($_COOKIE['recently_array']); 
-                // $retrieved = json_decode($v, true); 
-                $retrieved = json_decode($_COOKIE['recently_array'], true); 
-                foreach ($retrieved as $name => $value) {
-                    echo "<p>$name is $value\n</p>"; 
-                }
+                asort($recents); 
+                print_r($recents); 
+                // foreach ($retrieved as $name => $value) {
+                //     echo "<p>$name is $value\n</p>"; 
+                // }
+                // echo "<p>Recently Visited: \n</p>"; 
+                // // $v = stripslashes($_COOKIE['recently_array']); 
+                // // $retrieved = json_decode($v, true); 
+                // $retrieved = json_decode($_COOKIE['recently_array'], true); 
+                // foreach ($retrieved as $name => $value) {
+                //     echo "<p>$name is $value\n</p>"; 
+                // }
             ?>
         </div>
   </main>
