@@ -3,7 +3,7 @@
     $v = stripslashes($_COOKIE['visits_array']); 
     $retrieved = json_decode($v, true); 
     $retrieved['bc']++; 
-    setcookie('visitsArray', json_encode($retrieved)); 
+    setcookie('visits_array', json_encode($retrieved)); 
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 

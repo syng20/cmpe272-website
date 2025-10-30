@@ -101,14 +101,16 @@
                 // }
                 print "<p>$_COOKIE["first_visit"]\n"; 
                 print "Recently Visited: \n"; 
-                $v = stripslashes($_COOKIE['visits_array']); 
-                $retrieved = json_decode($v, true); 
+                // $v = stripslashes($_COOKIE['visits_array']); 
+                // $retrieved = json_decode($v, true); 
+                $retrieved = json_decode($_COOKIE['visits_array'], true); 
                 foreach ($retrieved as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
                 print "Most Visited: \n"; 
-                $v = stripslashes($_COOKIE['recently_array']); 
-                $retrieved = json_decode($v, true); 
+                // $v = stripslashes($_COOKIE['recently_array']); 
+                // $retrieved = json_decode($v, true); 
+                $retrieved = json_decode($_COOKIE['recently_array'], true); 
                 foreach ($_COOKIE["v"] as $name => $value) {
                     print "<p>$name is $value\n</p>"; 
                 }
