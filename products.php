@@ -110,7 +110,10 @@
                     }
                 }
                 asort($recents); 
-                print_r($recents); 
+                $listonames = ['abh' => "Apple Blossom Honey", 'bc' => "Beeswax Candles", 'cbh' => "Cherry Blossom Honey", 'hc' => "Honeycomb", 'lbh' => "Lychee Blossom Honey", 'mbh' => "Mango Blossom Honey", 'obh' => "Orange Blossom Honey", 'phbh' => "Peach Blossom Honey", 'prbh' => "Pear Blossom Honey", 'wh' => "Wildflower Honey"]; 
+                foreach($recents as $name => $value) {
+                    echo "<p>{$listonames[$name]}\n</p>"; 
+                }
                 // foreach ($retrieved as $name => $value) {
                 //     echo "<p>$name is $value\n</p>"; 
                 // }
