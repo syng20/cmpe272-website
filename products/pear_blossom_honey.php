@@ -20,7 +20,7 @@
             }
         }
     }
-    $retrieved['prbh'] = 0; 
+    $retrieved['prbh'] = 1; 
     if ($nz_counter > 5) {
         $retrieved[$largest_n] = 0; 
     }
