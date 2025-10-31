@@ -1,13 +1,8 @@
 <?php
-    $recents = array(); 
     $v = stripslashes($_COOKIE['recently_array']); 
-    $retrieved = json_decode($v, true);   
-    foreach ($retrieved as $name => $value) {
-        if ($value > 0) {
-            array_push($recents, $name); 
-        }
-    }
-    asort($recents); 
+    $retrieved = json_decode($v, true); 
+    if (empty($retrieved)) { $em = 0;}
+    else { $em = 1; } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,11 +108,10 @@
                 echo "<h3>Most Visited: \n</h3>"; 
                 // $v = stripslashes($_COOKIE['visits_array']); 
                 // $retrieved = json_decode($v, true);   
-                if (empty($recents)) echo "<p>No pages visited.</p>"; 
+                if ($em == 0) echo "<p>No pages visited.</p>"; 
                 else {
-                    $listonames = ['abh' => "Apple Blossom Honey", 'bc' => "Beeswax Candles", 'cbh' => "Cherry Blossom Honey", 'hc' => "Honeycomb", 'lbh' => "Lychee Blossom Honey", 'mbh' => "Mango Blossom Honey", 'obh' => "Orange Blossom Honey", 'phbh' => "Peach Blossom Honey", 'prbh' => "Pear Blossom Honey", 'wh' => "Wildflower Honey"]; 
-                    foreach($recents as $name => $value) {
-                        echo "<p>{$listonames[$name]}\n</p>"; 
+                    foreach($retrieved as $name => $value) {
+                        echo "<p>$value\n</p>"; 
                     }
                 }
                 // foreach ($retrieved as $name => $value) {
@@ -134,7 +128,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.23
+        Ver 2.4.24
     </footer>
 
 </body>

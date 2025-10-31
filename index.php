@@ -9,7 +9,7 @@ if (!isset($_COOKIE["first_visit"])) {
   // most recently visited 
   // set current page to 1, increase all non-zero values 
   // if number of non-zero values > 5, set largest value to 0
-  $recently = ['abh' => 0, 'bc' => 0, 'cbh' => 0, 'hc' => 0, 'lbh' => 0, 'mbh' => 0, 'obh' => 0, 'phbh' => 0, 'prbh' => 0, 'wh' => 0]; 
+  $recently = array(); 
   $recentlyJson = json_encode($recently); 
   setcookie('recently_array', $recentlyJson); 
 }
