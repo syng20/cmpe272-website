@@ -1,3 +1,13 @@
+<?php
+    $recents = array(); 
+    $retrieved = json_decode($_COOKIE['visits_array'], true); 
+    foreach ($retrieved as $name => $value) {
+        if ($value > 0) {
+            array_push($recents, $name); 
+        }
+    }
+    asort($recents); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,15 +111,7 @@
                 // }
                 echo "<h3>Most Visited: \n</h3>"; 
                 // $v = stripslashes($_COOKIE['visits_array']); 
-                // $retrieved = json_decode($v, true); 
-                $recents = array(); 
-                $retrieved = json_decode($_COOKIE['visits_array'], true); 
-                foreach ($retrieved as $name => $value) {
-                    if ($value > 0) {
-                        array_push($recents, $name); 
-                    }
-                }
-                asort($recents); 
+                // $retrieved = json_decode($v, true);   
                 if (empty($recents)) echo "<p>No pages visited.</p>"; 
                 else {
                     $listonames = ['abh' => "Apple Blossom Honey", 'bc' => "Beeswax Candles", 'cbh' => "Cherry Blossom Honey", 'hc' => "Honeycomb", 'lbh' => "Lychee Blossom Honey", 'mbh' => "Mango Blossom Honey", 'obh' => "Orange Blossom Honey", 'phbh' => "Peach Blossom Honey", 'prbh' => "Pear Blossom Honey", 'wh' => "Wildflower Honey"]; 
@@ -131,7 +133,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.21
+        Ver 2.4.22
     </footer>
 
 </body>
