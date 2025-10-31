@@ -7,7 +7,6 @@
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
-    $retrieved['lbh']++; 
     $nz_counter = 0; 
     $largest_n = ""; 
     $largest_v = 0; 
@@ -22,8 +21,9 @@
         }
     }
     if ($nz_counter > 5) {
-        $recent[$largest_n] = 0; 
+        $retrieved[$largest_n] = 0; 
     }
+    $retrieved['lbh']++; 
     setcookie('recently_array', json_encode($retrieved), 0, '/'); 
 ?>
 <!DOCTYPE html>
@@ -32,8 +32,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
-   <link href="../styles.css" rel="stylesheet">
-   <script src="code.js" defer></script>
+   <link href="../styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header> 

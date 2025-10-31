@@ -4,8 +4,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
-   <link href="styles.css" rel="stylesheet">
-   <script src="code.js" defer></script>
+   <link href="styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header> 
