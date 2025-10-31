@@ -1,6 +1,7 @@
 <?php
     $recents = array(); 
-    $retrieved = json_decode($_COOKIE['visits_array'], true); 
+    $v = stripslashes($_COOKIE['recently_array']); 
+    $retrieved = json_decode($v, true);   
     foreach ($retrieved as $name => $value) {
         if ($value > 0) {
             array_push($recents, $name); 
@@ -133,7 +134,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.22
+        Ver 2.4.23
     </footer>
 
 </body>
