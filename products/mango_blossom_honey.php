@@ -7,32 +7,32 @@
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
-    if (array_key_exists('mbh', $retrieved)) {
-        unset($retrieved['mbh']); 
-    }
-    $retrieved['mbh'] = "Mango Blossom Honey"; 
-    if (count($retrieved) > 5) {
-        array_splice($retrieved, 0, 1)
-    }
+    // if (array_key_exists('mbh', $retrieved)) {
+    //     unset($retrieved['mbh']); 
+    // }
+    // $retrieved['mbh'] = "Mango Blossom Honey"; 
+    // if (count($retrieved) > 5) {
+    //     array_splice($retrieved, 0, 1)
+    // }
 
 
-    // $nz_counter = 0; 
-    // $largest_n = ""; 
-    // $largest_v = 0; 
-    // foreach ($retrieved as $name => $value) {
-    //     if ($value > 0) {
-    //         $retrieved[$name]++; 
-    //         $nz_counter++; 
-    //         if ($value > $largest_v) {
-    //             $largest_n = $name; 
-    //             $largest_v = $value; 
-    //         }
-    //     }
-    // }
-    // $retrieved['mbh'] = 1; 
-    // if ($nz_counter > 5) {
-    //     $retrieved[$largest_n] = 0; 
-    // }
+    $nz_counter = 0; 
+    $largest_n = ""; 
+    $largest_v = 0; 
+    foreach ($retrieved as $name => $value) {
+        if ($value > 0) {
+            $retrieved[$name]++; 
+            $nz_counter++; 
+            if ($value > $largest_v) {
+                $largest_n = $name; 
+                $largest_v = $value; 
+            }
+        }
+    }
+    $retrieved['mbh'] = 1; 
+    if ($nz_counter > 5) {
+        $retrieved[$largest_n] = 0; 
+    }
     setcookie('recently_array', json_encode($retrieved), 0, '/'); 
 ?>
 <!DOCTYPE html>
