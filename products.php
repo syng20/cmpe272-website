@@ -100,19 +100,7 @@
         <div id="recent_sidebar">
             <br>
             <?php
-                // $recents = array(); 
-                // foreach ($_COOKIE['recent'] as $name => $value) {
-                //     if ($value > 0) {
-                //         $recents["$name"] = $value; 
-                //     }
-                // }
-                // asort($recents); 
-                // foreach ($recents as $name_j => $value_j) {
-                //     print "<p>$name_j\n</p>"; 
-                // }
                 echo "<h3>Most Visited: \n</h3>"; 
-                // $v = stripslashes($_COOKIE['visits_array']); 
-                // $retrieved = json_decode($v, true);   
                 if (empty($recents)) echo "<p>No pages visited.</p>"; 
                 else {
                     $listonames = ['abh' => "Apple Blossom Honey", 'bc' => "Beeswax Candles", 'cbh' => "Cherry Blossom Honey", 'hc' => "Honeycomb", 'lbh' => "Lychee Blossom Honey", 'mbh' => "Mango Blossom Honey", 'obh' => "Orange Blossom Honey", 'phbh' => "Peach Blossom Honey", 'prbh' => "Pear Blossom Honey", 'wh' => "Wildflower Honey"]; 
@@ -120,27 +108,11 @@
                         echo "<p>{$listonames[$name]}\n</p>"; 
                     }
                 }
-                // if ($em == 0) echo "<p>No pages visited.</p>"; 
-                // else {
-                //     foreach($retrieved as $name => $value) {
-                //         echo "<p>$value\n</p>"; 
-                //     }
-                // }
-                // foreach ($retrieved as $name => $value) {
-                //     echo "<p>$name is $value\n</p>"; 
-                // }
-                // echo "<p>Recently Visited: \n</p>"; 
-                // // $v = stripslashes($_COOKIE['recently_array']); 
-                // // $retrieved = json_decode($v, true); 
-                // $retrieved = json_decode($_COOKIE['recently_array'], true); 
-                // foreach ($retrieved as $name => $value) {
-                //     echo "<p>$name is $value\n</p>"; 
-                // }
             ?>
         </div>
     </main>
     <footer>
-        Ver 2.4.36
+        Ver 2.4.37
     </footer>
 
 </body>

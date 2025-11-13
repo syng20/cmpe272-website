@@ -7,15 +7,6 @@
     // for most recently visited
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
-    // if (array_key_exists('mbh', $retrieved)) {
-    //     unset($retrieved['mbh']); 
-    // }
-    // $retrieved['mbh'] = "Mango Blossom Honey"; 
-    // if (count($retrieved) > 5) {
-    //     array_splice($retrieved, 0, 1)
-    // }
-
-
     $nz_counter = 0; 
     $largest_n = ""; 
     $largest_v = 0; 
