@@ -28,7 +28,7 @@
             }
         }
     }
-    if (($nz_counter > 5) && ('lbh' !=$largest_n)) {
+    if (($nz_counter >= 5) && ('lbh' !=$largest_n)) {
         $retrieved[$largest_n] = 0; 
     }
     $retrieved['lbh']++; 

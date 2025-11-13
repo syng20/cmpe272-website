@@ -34,7 +34,7 @@
     </header>
 
     <h2>Products</h2>
-    <main class="productsection">
+    <!-- <main class="productsection"> -->
         <div id="productbuttoncontainer">
             <div class ="imagebuttonholder">
                 <a href="products/wildflower_honey.php">
@@ -138,9 +138,9 @@
                 // }
             ?>
         </div>
-    </main>
+    <!-- </main> -->
     <footer>
-        Ver 2.4.33
+        Ver 2.4.34
     </footer>
 
 </body>
