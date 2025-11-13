@@ -140,7 +140,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.32
+        Ver 2.4.33
     </footer>
 
 </body>
