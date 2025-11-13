@@ -111,9 +111,6 @@
             ?>
         </div>
     </main>
-    <footer>
-        Ver 2.4.37
-    </footer>
 
 </body>
 </html>

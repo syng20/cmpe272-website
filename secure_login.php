@@ -49,6 +49,10 @@
     ?>
     </div>
 
+    
+    <footer>
+        <p>Ver 2.5.00</p>
+    </footer>
 
 </body>
 </html>
