@@ -176,8 +176,9 @@ ul li a:hover {
     align-content: space-around; 
 
     overflow-y: scroll;
-    position: sticky;
-    top: 50px;
+    
+    position: absolute; 
+    bottom: 25px; 
     
 }
 .imagebuttonholder {
