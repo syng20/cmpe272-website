@@ -17,7 +17,7 @@
                 if ( !(empty($_POST["usrn"])) && !(empty($_POST["pwd"])) ) {
                     if ( ($_POST["usrn"] != "admin") || ($_POST["pwd"] != "4dmin_password") ) {
                         print("<p>Incorrect login.</p>"); 
-                        print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
+                        print("<p>username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
                     }
                     else $access_granted = 1; 
                 } 
@@ -51,10 +51,9 @@
             }
 
             echo "<pre>";
-            foreach ($json_data as $small) {
-                if ($small == 'users') {
-                    foreach ($small as $smaller) echo "* $smaller->name"; 
-                }
+            $usersSection = $json_data['users']; 
+            foreach ($usersSection as $user) {
+                echo "* $user->name"; 
             }
             echo "</pre>";
         }
@@ -63,7 +62,7 @@
 
     
     <footer>
-        <p>Ver 2.5.03</p>
+        <p>Ver 2.5.04</p>
     </footer>
 
 </body>
