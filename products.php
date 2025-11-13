@@ -2,12 +2,13 @@
     $recents = array(); 
     $v = stripslashes($_COOKIE['recently_array']); 
     $retrieved = json_decode($v, true); 
+    asort($retrieved);
     foreach ($retrieved as $name => $value) {
         if ($value > 0) {
             array_push($recents, $name); 
         }
     }
-    asort($recents); 
+    // asort($recents); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,7 @@
     </header>
 
     <h2>Products</h2>
-    <main>
+    <main id="productsection">
         <div id="productbuttoncontainer">
             <div class ="imagebuttonholder">
                 <a href="products/wildflower_honey.php">
@@ -140,7 +141,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.28
+        Ver 2.4.29
     </footer>
 
 </body>
