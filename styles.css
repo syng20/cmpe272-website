@@ -251,6 +251,16 @@ img{
     overflow-y: scroll;   
 }
 
+/* non nav-bar ul */
+.textsection ul {
+    list-style-type: circle;
+    
+}
+
+/* .textsection plain ul li {
+
+} */
+
 
 /* footer */
 #atbottom { 

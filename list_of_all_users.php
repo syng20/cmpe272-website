@@ -37,7 +37,7 @@
 
     
     <footer>
-        <p>Ver 2.5.10</p>
+        <p>Ver 2.5.12</p>
     </footer>
 
 </body>
