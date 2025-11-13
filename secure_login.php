@@ -51,12 +51,13 @@
                 die('Error decoding the JSON file');
             }
 
-            echo "<pre>";
+            echo "<ul>\n";
             $usersSection = $json_data['users']; 
             foreach ($usersSection as $user) {
-                echo "* " . $user['name'] . "\n"; 
+                echo "<li>" . $user['name'] . "</li>"; 
+                
             }
-            echo "</pre>";
+            echo "</ul>";
 
             // echo "<a href="list_of_all_users.php"><p>List of All Users</p></a>"; 
 
