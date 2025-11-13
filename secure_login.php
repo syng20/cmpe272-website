@@ -53,7 +53,7 @@
             echo "<pre>";
             $usersSection = $json_data['users']; 
             foreach ($usersSection as $user) {
-                echo "* $user->name"; 
+                echo "* " . $user['name']\n; 
             }
             echo "</pre>";
         }
@@ -62,7 +62,7 @@
 
     
     <footer>
-        <p>Ver 2.5.04</p>
+        <p>Ver 2.5.05</p>
     </footer>
 
 </body>
