@@ -158,7 +158,7 @@ ul li a:hover {
     overflow: scroll; 
 }
 #productbuttoncontainer{
-    width: 60%; 
+    width: 75%; 
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly; 
@@ -168,7 +168,8 @@ ul li a:hover {
     
 }
 #recent_sidebar {
-    width: 30%;
+    width: 20%;
+    height: 50%;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly; 
