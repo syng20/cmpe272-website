@@ -51,7 +51,11 @@
             }
 
             echo "<pre>";
-            echo $json_data['users']; 
+            foreach ($json_data as $small) {
+                if ($small == 'users') {
+                    foreach ($small as $smaller) echo "* $smaller->name"; 
+                }
+            }
             echo "</pre>";
         }
     ?>
@@ -59,7 +63,7 @@
 
     
     <footer>
-        <p>Ver 2.5.02</p>
+        <p>Ver 2.5.03</p>
     </footer>
 
 </body>
