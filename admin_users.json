@@ -1,0 +1,24 @@
+{
+    "status": "success", 
+    "count": 16,
+    "users": [
+        {"name": "Blathers"},
+        {"name": "Booke"},
+        {"name": "Brewste"},
+        {"name": "Coppe"},
+        {"name": "Label"},
+        {"name": "Lloid"},
+        {"name": "Mabel"},
+        {"name": "Pelly"},
+        {"name": "Pete"},
+        {"name": "Phyllis"},
+        {"name": "Porter"},
+        {"name": "Resetti"},
+        {"name": "Rover"},
+        {"name": "Sable"},
+        {"name": "Tom Nook"},
+        {"name": "Tortimer"}
+    ]
+
+}
+

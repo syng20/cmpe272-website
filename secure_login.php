@@ -38,20 +38,30 @@
     <div class="textsection">
     <?php
         if ($access_granted) {
-            print "<h2>Users:</h2>\n";
-            $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            while ($line = fgets($myfile)) {
-                print "<p>* $line\n</p>";
-            }
-            // echo fread($myfile,filesize("admin_users.txt"));
-            fclose($myfile);
+            <?php 
+                $json = file_get_contents('admin_users.json'); 
+
+                if ($json === false) {
+                    die('Error reading the JSON file');
+                }
+
+                $json_data = json_decode($json, true); 
+
+                if ($json_data === null) {
+                    die('Error decoding the JSON file');
+                }
+
+                echo "<pre>";
+                echo $json_data['users']; 
+                echo "</pre>";
+            ?>
         }
     ?>
     </div>
 
     
     <footer>
-        <p>Ver 2.5.00</p>
+        <p>Ver 2.5.01</p>
     </footer>
 
 </body>
