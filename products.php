@@ -8,7 +8,7 @@
         }
     }
     asort($recents); 
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +140,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.26
+        Ver 2.4.27
     </footer>
 
 </body>
