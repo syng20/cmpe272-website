@@ -1,11 +1,46 @@
+<?php
+    // for most visited 
+    $v = stripslashes($_COOKIE['visits_array']); 
+    $retrieved = json_decode($v, true); 
+    $retrieved['lbh']++; 
+    setcookie('visits_array', json_encode($retrieved), 0, '/'); 
+    // for most recently visited
+    $v = stripslashes($_COOKIE['recently_array']); 
+    $retrieved = json_decode($v, true); 
+    // if (array_key_exists('lbh', $retrieved)) {
+    //     unset($retrieved['lbh']); 
+    // }
+    // $retrieved['lbh'] = "Lychee Blossom Honey"; 
+    // if (count($retrieved) > 5) {
+    //     array_splice($retrieved, 0, 1)
+    // }
+    
+    $nz_counter = 0; 
+    $largest_n = ""; 
+    $largest_v = 0; 
+    foreach ($retrieved as $name => $value) {
+        if ($value > 0) {
+            $retrieved[$name]++; 
+            $nz_counter++; 
+            if ($value > $largest_v) {
+                $largest_n = $name; 
+                $largest_v = $value; 
+            }
+        }
+    }
+    if (($nz_counter >= 5) && ('lbh' !=$largest_n)) {
+        $retrieved[$largest_n] = 0; 
+    }
+    $retrieved['lbh']++; 
+    setcookie('recently_array', json_encode($retrieved), 0, '/'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
-   <link href="../styles.css" rel="stylesheet">
-   <script src="code.js" defer></script>
+   <link href="../styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header> 
