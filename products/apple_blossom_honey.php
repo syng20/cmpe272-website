@@ -30,7 +30,7 @@
         }
     }
     $retrieved['abh'] = 1; 
-    if ($nz_counter >= 5) {
+    if (($nz_counter > 5) && ('abh' != $largest_n)) {
         $retrieved[$largest_n] = 0; 
     }
     setcookie('recently_array', json_encode($retrieved), 0, '/'); 

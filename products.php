@@ -34,7 +34,7 @@
     </header>
 
     <h2>Products</h2>
-    <main id="productsection">
+    <main class="productsection">
         <div id="productbuttoncontainer">
             <div class ="imagebuttonholder">
                 <a href="products/wildflower_honey.php">
@@ -98,7 +98,6 @@
             </div>
         </div>
         <div id="recent_sidebar">
-            <p>hi.</p>
             <br>
             <?php
                 // $recents = array(); 
@@ -141,7 +140,7 @@
         </div>
     </main>
     <footer>
-        Ver 2.4.29
+        Ver 2.4.30
     </footer>
 
 </body>
