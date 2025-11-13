@@ -38,30 +38,28 @@
     <div class="textsection">
     <?php
         if ($access_granted) {
-            <?php 
-                $json = file_get_contents('admin_users.json'); 
+            $json = file_get_contents('admin_users.json'); 
 
-                if ($json === false) {
-                    die('Error reading the JSON file');
-                }
+            if ($json === false) {
+                die('Error reading the JSON file');
+            }
 
-                $json_data = json_decode($json, true); 
+            $json_data = json_decode($json, true); 
 
-                if ($json_data === null) {
-                    die('Error decoding the JSON file');
-                }
+            if ($json_data === null) {
+                die('Error decoding the JSON file');
+            }
 
-                echo "<pre>";
-                echo $json_data['users']; 
-                echo "</pre>";
-            ?>
+            echo "<pre>";
+            echo $json_data['users']; 
+            echo "</pre>";
         }
     ?>
     </div>
 
     
     <footer>
-        <p>Ver 2.5.01</p>
+        <p>Ver 2.5.02</p>
     </footer>
 
 </body>
