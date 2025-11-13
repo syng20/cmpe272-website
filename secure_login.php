@@ -59,7 +59,7 @@
             }
             echo "</ul>";
 
-            // echo "<a href="list_of_all_users.php"><p>List of All Users</p></a>"; 
+            echo '<a href="list_of_all_users.php"><p>List of All Users</p></a>';
 
         }
     ?>

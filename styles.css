@@ -254,12 +254,17 @@ img{
 /* non nav-bar ul */
 .textsection ul {
     list-style-type: circle;
-    
+    margin: 0;
+    padding: revert;
+    overflow: hidden;
+    background-color: revert; 
+    display: revert; 
+    border: none;
 }
 
-/* .textsection plain ul li {
-
-} */
+.textsection plain ul li {
+    border-right: none;
+}
 
 
 /* footer */
