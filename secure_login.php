@@ -38,19 +38,15 @@
     <div class="textsection">
     <?php
         if ($access_granted) {
-            echo "<h3>Users</h3> --- ---" . '(<a href="list_of_all_users.php"><p>List of All Users</p></a>)'; 
+            echo "<h3>Users</h3>"; 
             $json = file_get_contents('admin_users.json'); 
-
             if ($json === false) {
                 die('Error reading the JSON file');
             }
-
             $json_data = json_decode($json, true); 
-
             if ($json_data === null) {
                 die('Error decoding the JSON file');
             }
-
             echo "<ul>\n";
             $usersSection = $json_data['users']; 
             foreach ($usersSection as $user) {
@@ -59,7 +55,7 @@
             }
             echo "</ul>";
 
-            // echo '<a href="list_of_all_users.php"><p>List of All Users</p></a>';
+            echo '<a href="list_of_all_users.php"><p>List of All Users</p></a>';
 
         }
     ?>

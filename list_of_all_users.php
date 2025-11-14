@@ -105,14 +105,5 @@
     
     </div>
 
-    
-    <footer>
-        <p>Ver 2.5.18</p>
-    </footer>
-
-    <!-- http://williamgky.online/userlist.php -->
-    <!-- https://plb.bfm.mybluehost.me/righttwice/curl.php -->
-    <!-- https://seanhtran.com/users.php -->
-
 </body>
 </html>

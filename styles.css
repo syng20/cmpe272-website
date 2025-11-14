@@ -249,6 +249,7 @@ img{
 /* text section */
 .textsection{
     overflow-y: scroll;   
+    display: flex; 
 }
 
 /* non nav-bar ul */
@@ -264,7 +265,6 @@ img{
 
 .textsection plain ul li {
     border-right: none;
-    display: flex;
 }
 
 .userssection{

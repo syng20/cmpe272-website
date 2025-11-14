@@ -45,5 +45,9 @@ if (!isset($_COOKIE["first_visit"])) {
       </div>
   </main>
 
+  <footer>
+      <p>Ver 2.5.19</p>
+  </footer>
+
 </body>
 </html>
