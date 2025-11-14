@@ -9,36 +9,44 @@
 <body>
 
     <div class="textsection">
-    <?php
-        
-            echo "<h3>Users From All Companies</h3>"; 
-            $json = file_get_contents('admin_users.json'); 
-
-            if ($json === false) {
-                die('Error reading the JSON file');
-            }
-
-            $json_data = json_decode($json, true); 
-
-            if ($json_data === null) {
-                die('Error decoding the JSON file');
-            }
-
-            echo "<pre>";
-            $usersSection = $json_data['users']; 
-            foreach ($usersSection as $user) {
-                echo "* " . $user['name'] . "\n"; 
-            }
-            echo "</pre>";
-
-        }
-    ?>
+        <h3>Users From All Companies</h3>
+        <div class="userssection"> 
+            <p><strong>Source:</strong> williamgky.online</p>
+            <?php
+                curl -H "Accept: application/json" -X GET http://williamgky.online/userlist.php -o -temp.json
+                $json = file_get_contents('temp.json'); 
+                if ($json === false) {
+                    die('Error reading the JSON file');
+                }
+                $json_data = json_decode($json, true); 
+                if ($json_data === null) {
+                    die('Error decoding the JSON file');
+                }
+                echo "<ul>\n";
+                $usersSection = $json_data['result']; 
+                foreach ($usersSection as $user) {
+                    echo "<li>" . $user . "</li>"; 
+                }
+                echo "</ul>";
+            ?>
+        </div>
+        <div class="userssection"> 
+        </div>
+        <div class="userssection"> 
+        </div>
+        <div class="userssection"> 
+        </div>
+    
     </div>
 
     
     <footer>
-        <p>Ver 2.5.14</p>
+        <p>Ver 2.5.15</p>
     </footer>
+
+    <!-- http://williamgky.online/userlist.php -->
+    <!-- https://plb.bfm.mybluehost.me/righttwice/curl.php -->
+    <!-- https://seanhtran.com/users.php -->
 
 </body>
 </html>
