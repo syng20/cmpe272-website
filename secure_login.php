@@ -17,7 +17,7 @@
                 if ( !(empty($_POST["usrn"])) && !(empty($_POST["pwd"])) ) {
                     if ( ($_POST["usrn"] != "admin") || ($_POST["pwd"] != "4dmin_password") ) {
                         print("<p>Incorrect login.</p>"); 
-                        print("<p>/n username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
+                        print("<p>username: $_POST[usrn] , password: $_POST[pwd] </p>"); 
                     }
                     else $access_granted = 1; 
                 } 
@@ -38,17 +38,28 @@
     <div class="textsection">
     <?php
         if ($access_granted) {
-            print "<h2>Users:</h2>\n";
-            $myfile = fopen("admin_users.txt", "r") or die("Unable to open file!");
-            while ($line = fgets($myfile)) {
-                print "<p>* $line\n</p>";
+            echo "<h3>Users</h3>"; 
+            $json = file_get_contents('admin_users.json'); 
+            if ($json === false) {
+                die('Error reading the JSON file');
             }
-            // echo fread($myfile,filesize("admin_users.txt"));
-            fclose($myfile);
+            $json_data = json_decode($json, true); 
+            if ($json_data === null) {
+                die('Error decoding the JSON file');
+            }
+            echo "<ul>\n";
+            $usersSection = $json_data['users']; 
+            foreach ($usersSection as $user) {
+                echo "<li>" . $user['name'] . "</li>"; 
+                
+            }
+            echo "</ul>";
+
+            echo '<a href="list_of_all_users.php"><p>List of All Users</p></a>';
+
         }
     ?>
     </div>
-
 
 </body>
 </html>

@@ -248,11 +248,31 @@ img{
 
 /* text section */
 .textsection{
+    overflow-y: scroll;   
     display: flex; 
-    flex-wrap: wrap;
+}
 
-    overflow-y: scroll;
-    
+/* non nav-bar ul */
+.textsection ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: revert;
+    overflow: hidden;
+    background-color: revert; 
+    display: revert; 
+    border: none;
+}
+
+.textsection plain ul li {
+    border-right: none;
+}
+
+.userssection{
+    width: 20%; 
+    overflow-x: scroll; 
+    overflow-y: scroll; 
+    padding: 5px; 
+    border: var(--outline_size) solid var(--outline_color);
 }
 
 
