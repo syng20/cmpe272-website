@@ -35,10 +35,11 @@
         <input type="submit">
     </form>
 
-    <div class="textsection">
+    
     <?php
         if ($access_granted) {
             echo "<h3>Users</h3>"; 
+            echo '<div class="textsection">'; 
             $json = file_get_contents('admin_users.json'); 
             if ($json === false) {
                 die('Error reading the JSON file');
@@ -54,12 +55,13 @@
                 
             }
             echo "</ul>";
+            
+            echo "</div>"; 
 
             echo '<a href="list_of_all_users.php"><p>List of All Users</p></a>';
 
         }
     ?>
-    </div>
 
 </body>
 </html>
