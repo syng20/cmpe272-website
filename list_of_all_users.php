@@ -7,9 +7,8 @@
    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
+    <h3>Users From All Companies</h3>
     <div class="textsection">
-        <h3>Users From All Companies</h3>
         <div class="userssection"> 
             <p><strong>Source:</strong> syng20.me</p>
             <?php
@@ -82,7 +81,7 @@
             <p><strong>Source:</strong> seanhtran.com</p>
             <?php
                 $ch = curl_init(); 
-                curl_setopt($ch, CURLOPT_URL, "https://seanhtran.com/users.php");
+                curl_setopt($ch, CURLOPT_URL, "https://seanhtran.com/users.php?format=json");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, ['Accept: application/json']);
                 $response = curl_exec($ch); 
@@ -108,7 +107,7 @@
 
     
     <footer>
-        <p>Ver 2.5.17</p>
+        <p>Ver 2.5.18</p>
     </footer>
 
     <!-- http://williamgky.online/userlist.php -->

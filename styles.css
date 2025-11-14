@@ -264,6 +264,7 @@ img{
 
 .textsection plain ul li {
     border-right: none;
+    display: flex;
 }
 
 .userssection{
@@ -271,7 +272,7 @@ img{
     overflow-x: scroll; 
     overflow-y: scroll; 
     padding: 5px; 
-    border: var(--outline_color); 
+    border: var(--outline_size) solid var(--outline_color);
 }
 
 
