@@ -67,5 +67,21 @@ $jsonData = array (
 );
 header('Content-Type: application/json');
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
-echo $json_pretty;
+
+
+$url = "http://syng20.me/productlist.php";
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $json_pretty);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$response  = curl_exec($ch);
+curl_close($ch);
+
+
+
+echo $response;
 ?>
