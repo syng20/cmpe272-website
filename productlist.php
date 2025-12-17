@@ -6,7 +6,7 @@ $jsonData = array (
         array(
             "name" => "Wildflower Honey", 
             "description" => "A jar of wildflower honey. Each jar is 12 oz.", 
-            "img"=> "https://syng20.me/img/wildflower_honey.png",
+            "img" => "https://syng20.me/img/wildflower_honey.png",
             "price"=> "15.00"
         ), 
         array(
@@ -67,6 +67,8 @@ $jsonData = array (
 );
 header('Content-Type: application/json');
 header("Access-Control-Allow-Origin: *");
+header("Connection: Keep-Alive"); 
+header("Keep-alive: timeout=5, max=100");
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
 echo $json_pretty;
 ?>
