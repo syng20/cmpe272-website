@@ -1,0 +1,68 @@
+{
+    "status": "success", 
+    "count": 10,
+    "products": [
+        {
+            "name": "Wildflower Honey",
+            "description": "A jar of wildflower honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/wildflower_honey.png",
+            "price": "15.00"
+        },
+        {
+            "name": "Apple Blossom Honey",
+            "description": "A jar of apple blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/apple_blossom_honey.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Orange Blossom Honey",
+            "description": "A jar of orange blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/orange_blossom_honey.png",
+            "price": "15.00"
+        },
+        {
+            "name": "Cherry Blossom Honey",
+            "description": "A jar of cherry blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/cherry_blossom_honey.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Pear Blossom Honey",
+            "description": "A jar of pear blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/pear_blossom_honey.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Peach Blossom Honey",
+            "description": "A jar of peach blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/peach_blossom_honey.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Mango Blossom Honey",
+            "description": "A jar of mango blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/mango_blossom_honey.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Lychee Blossom Honey",
+            "description": "A jar of lychee blossom honey. Each jar is 12 oz.", 
+            "img": "https://syng20.me/img/lychee_blossom_honey.png",
+            "price": "15.00"
+        },
+        {
+            "name": "Honeycomb",
+            "description": "A jar of honeycomb preserved within wildflower honey. Each jar is 12 oz. ", 
+            "img": "https://syng20.me/img/honeycomb.jpg",
+            "price": "15.00"
+        },
+        {
+            "name": "Beeswax",
+            "description": "A set of three candles made from beeswax.", 
+            "img": "https://syng20.me/img/beeswax_candles.jpg",
+            "price": " $11.00 per pack of three candles"
+        }
+    ]
+
+}
+

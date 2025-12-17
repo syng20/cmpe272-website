@@ -49,7 +49,7 @@
         </nav>
     </header>
 
-    <h2>Wildflower Blossom Honey</h2>
+    <h2>Wildflower Honey</h2>
 
     <main class="productsection">
         <div class="productsection_i">
@@ -57,7 +57,7 @@
         </div>
         <div class="productsection_t"> 
             <p><strong>Contents:</strong>
-            A jar of wildflower blossom honey. Each jar is 12 oz.
+            A jar of wildflower honey. Each jar is 12 oz.
             <br>
             <strong>Price:</strong>
             $15.00 per jar</p>
