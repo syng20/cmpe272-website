@@ -78,6 +78,5 @@ header('Content-Type: application/json');
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
 echo "<pre>" . $json_pretty . "<pre/>";
 ?>
-v2
 </body>
 </html>
