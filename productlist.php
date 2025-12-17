@@ -67,8 +67,6 @@ $jsonData = array (
 );
 header('Content-Type: application/json');
 header("Access-Control-Allow-Origin: *");
-header("Connection: Keep-Alive"); 
-header("Keep-alive: timeout=5, max=100");
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
 echo $json_pretty;
 ?>
