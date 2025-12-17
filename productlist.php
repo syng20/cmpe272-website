@@ -1,12 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
-   <link href="styles.css" rel="stylesheet">
-</head>
-<body> -->
 <?php
 $jsonData = array ( 
     "status" => "success", 
@@ -76,7 +67,5 @@ $jsonData = array (
 );
 header('Content-Type: application/json');
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
-echo "<pre>" . $json_pretty . "<pre/>";
+echo $json_pretty;
 ?>
-<!-- </body>
-</html> -->
