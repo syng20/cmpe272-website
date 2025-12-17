@@ -53,15 +53,15 @@ $jsonData = array (
         ),
         array(
             "name" => "Honeycomb",
-            "description" => "A jar of honeycomb preserved within wildflower honey. Each jar is 12 oz. ", 
+            "description" => "A jar of honeycomb preserved within wildflower honey. Each jar is 12 oz.", 
             "img" => "https://syng20.me/img/honeycomb.jpg",
             "price" => "15.00"
         ),
         array(
-            "name" => "Beeswax",
-            "description" => "A set of three candles made from beeswax.", 
+            "name" => "Beeswax Candles",
+            "description" => "A set of three candles made from beeswax. The price is for a pack of three.", 
             "img" => "https://syng20.me/img/beeswax_candles.jpg",
-            "price" => " $11.00 per pack of three candles"
+            "price" => "11.00"
         )
     )
 );

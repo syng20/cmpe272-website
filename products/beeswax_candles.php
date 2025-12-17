@@ -57,10 +57,10 @@
         </div>
         <div class="productsection_t"> 
             <p><strong>Contents:</strong>
-            A set of three candles made from beeswax.
+            A set of three candles made from beeswax. The price is for a pack of three.
             <br>
             <strong>Price:</strong>
-            $11.00 per pack of three candles</p>
+            $11.00</p>
         </div>
     </main>
     
