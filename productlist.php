@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="utf-8">
@@ -6,7 +6,7 @@
    <title></title>
    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body> -->
 <?php
 $jsonData = array ( 
     "status" => "success", 
@@ -78,5 +78,5 @@ header('Content-Type: application/json');
 $json_pretty = json_encode($jsonData, JSON_PRETTY_PRINT);
 echo "<pre>" . $json_pretty . "<pre/>";
 ?>
-</body>
-</html>
+<!-- </body>
+</html> -->
